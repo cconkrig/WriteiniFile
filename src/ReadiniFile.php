@@ -29,7 +29,7 @@ class ReadiniFile
     *
     * @return array ini file data in a array
     */
-    private function better_parse_ini ( $filepath ) {
+    public function better_parse_ini ( $filepath ) {
         $ini = file( $filepath );
         if ( count( $ini ) == 0 ) { return array(); }
         $sections = array();
