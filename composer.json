@@ -1,5 +1,5 @@
 {
-    "name": "magicalex/write-ini-file",
+    "name": "cconkrig/write-ini-file",
     "type": "library",
     "description": "Write-ini-file php library for create, remove, erase, add, and update ini file",
     "keywords": [
@@ -8,12 +8,12 @@
         "write",
         "write_ini_file"
     ],
-    "homepage": "https://github.com/Magicalex/WriteIniFile",
+    "homepage": "https://github.com/cconkrig/WriteIniFile",
     "license": "GPL-3.0",
     "authors": [
         {
-            "name": "Magicalex",
-            "email": "magicalex@mondedie.fr"
+            "name": "cconkrig",
+            "email": "cconkrig@gmail.com"
         }
     ],
     "require": {
