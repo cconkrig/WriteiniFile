@@ -1,6 +1,7 @@
 <?php
 
 namespace WriteiniFile;
+use ReadiniFile;
 
 /**
  * Class WriteiniFile.
@@ -21,14 +22,13 @@ class WriteiniFile
      * Constructor.
      *
      * @param string $ini_file
-     * @param int    $scanner_mode scanner mode INI_SCANNER_RAW, INI_SCANNER_TYPED or INI_SCANNER_NORMAL
      */
-    public function __construct($ini_file, $scanner_mode = INI_SCANNER_RAW)
+    public function __construct($ini_file)
     {
         $this->path_to_ini_file = $ini_file;
 
         if (file_exists($this->path_to_ini_file) === true) {
-            $this->data_ini_file = @parse_ini_file($this->path_to_ini_file, true, $scanner_mode);
+            $this->data_ini_file = @better_parse_ini($this->path_to_ini_file);
         } else {
             $this->data_ini_file = [];
         }
