@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "php": ">=8.2"
+        "php": "^8"
     },
     "require-dev": {
         "php-coveralls/php-coveralls": "2.5.3",
