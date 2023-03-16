@@ -29,7 +29,7 @@ class ReadiniFile
     *
     * @return array ini file data in a array
     */
-    public function better_parse_ini ( $filepath ) {
+    public static function better_parse_ini ( $filepath ) {
         $ini = file( $filepath );
         if ( count( $ini ) == 0 ) { return array(); }
         $sections = array();
@@ -85,7 +85,7 @@ class ReadiniFile
         self::$path_to_ini_file = $ini_file;
 
         if (file_exists(self::$path_to_ini_file) === true) {
-            self::$data_ini_file = @better_parse_ini(self::$path_to_ini_file);
+            self::$data_ini_file = self::better_parse_ini(self::$path_to_ini_file);
         } else {
             throw new \Exception(sprintf('File ini does not exist: %s', self::$path_to_ini_file));
         }
