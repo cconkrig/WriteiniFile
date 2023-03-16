@@ -28,7 +28,7 @@ class WriteiniFile
         $this->path_to_ini_file = $ini_file;
 
         if (file_exists($this->path_to_ini_file) === true) {
-            $this->data_ini_file = new better_parse_ini($this->path_to_ini_file);
+            $this->data_ini_file = new ReadiniFile::better_parse_ini($this->path_to_ini_file);
         } else {
             $this->data_ini_file = [];
         }
