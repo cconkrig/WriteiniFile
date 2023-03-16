@@ -31,6 +31,7 @@ class ReadiniFile
     */
     public static function better_parse_ini ( $filepath ) {
         $ini = file( $filepath );
+        if ( $ini == false ) { return false; }
         if ( count( $ini ) == 0 ) { return array(); }
         $sections = array();
         $values = array();
