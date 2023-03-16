@@ -30,7 +30,6 @@
     },
     "scripts": {
         "test": [
-            "rm tests/file_ini/*_test.ini",
             "php vendor/bin/phpunit"
         ]
     }
