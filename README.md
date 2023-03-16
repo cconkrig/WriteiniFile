@@ -1,3 +1,5 @@
+[![PHP Composer](https://github.com/cconkrig/WriteiniFile/actions/workflows/php.yml/badge.svg?branch=master)](https://github.com/cconkrig/WriteiniFile/actions/workflows/php.yml)
+
 ## WriteiniFile
 
 Write-ini-file php library for create, remove, erase, add, and update ini file.
