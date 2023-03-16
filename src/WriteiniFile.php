@@ -33,9 +33,9 @@ class WriteiniFile
             $this->data_ini_file = [];
         }
 
-        #if ($this->data_ini_file === false) {
-        #    throw new \Exception(sprintf('Unable to parse file ini: %s', $this->path_to_ini_file));
-        #}
+        if ($this->data_ini_file === false) {
+            throw new \Exception(sprintf('Unable to parse file ini: %s', $this->path_to_ini_file));
+        }
     }
 
     /**
