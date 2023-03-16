@@ -4,10 +4,8 @@
       <directory suffix="Test.php">tests</directory>
     </testsuite>
   </testsuites>
-  <filter>
-    <whitelist>
-      <directory suffix=".php">src</directory>
-    </whitelist>
+  <exclude>
+    <directory suffix=".php">src</directory>
   </filter>
   <logging>
     <log type="coverage-clover" target="coverage/coverage.xml"/>
