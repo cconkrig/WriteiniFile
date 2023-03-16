@@ -33,9 +33,9 @@ class WriteiniFile
             $this->data_ini_file = [];
         }
 
-        if ($this->data_ini_file === false) {
-            throw new \Exception(sprintf('Unable to parse file ini: %s', $this->path_to_ini_file));
-        }
+        #if ($this->data_ini_file === false) {
+        #    throw new \Exception(sprintf('Unable to parse file ini: %s', $this->path_to_ini_file));
+        #}
     }
 
     /**
@@ -131,7 +131,7 @@ class WriteiniFile
         $file_content = preg_replace('#^'.PHP_EOL.'#', '', $file_content);
         $result = @file_put_contents($this->path_to_ini_file, $file_content);
         if (false === $result) {
-            throw new \Exception(sprintf('[WriteiniFile.php] Unable to write in the file ini: %s', $this->path_to_ini_file));
+            throw new \Exception(sprintf('Unable to write in the file ini: %s', $this->path_to_ini_file));
         }
 
         return ($result !== false) ? true : false;
