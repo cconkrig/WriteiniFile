@@ -6,7 +6,7 @@
   </testsuites>
   <exclude>
     <directory suffix=".php">src</directory>
-  </filter>
+  </exclude>
   <logging>
     <log type="coverage-clover" target="coverage/coverage.xml"/>
   </logging>
