@@ -127,6 +127,6 @@ class WriteiniFileTest extends TestCase
         } catch (\Exception $error) {
         }
 
-        $this->assertEquals('Unable to parse file ini: tests/file_ini/CorruptiniFile.ini', $error->getMessage());
+        $this->assertEquals('Unable to write in the file ini: tests/file_ini/CorruptiniFile.ini', $error->getMessage());
     }
 }
